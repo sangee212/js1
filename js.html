@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAINBOW</title>
+    <style>
+        body{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            margin-top:190px;
+            background-color: lightsteelblue;
+        }
+        button{
+            cursor: pointer;
+            background-color: green;
+        }
+        button:hover{
+            transform:skew(45deg);
+        }
+        input[type=submit]:hover{
+    background-color: red;}
+    </style>
+</head>
+<body>
+    <button><input type="submit" value="Click Here!"></button>
+    <script>
+            const btn=document.querySelector('button');
+            const body=document.querySelector('body');
+            const color=['blue','pink','green','grey','red','indigo','skyblue'];
+document.addEventListener('click',function(){
+         const colorIndex=parseInt(Math.random()*color.length);
+         body.style.backgroundColor=color[colorIndex];
+     });
+    </script>
+</body>
+</html>
+
+
+
+
